@@ -28,5 +28,5 @@ def connection(request):
         cursorclass=pymysql.cursors.DictCursor,
     )
     yield connection
-    connection.cursor().close()
+
     connection.close()
